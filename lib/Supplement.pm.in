@@ -173,7 +173,6 @@ sub GetSupplementFile {
   else {
     $filename = File::Spec->catfile( $supplement_root, $name );
   }
-  $filename =~ s/[:\?]/_/g;
   my $result;
 
   d( "Reading $filename" );
