@@ -63,7 +63,7 @@ $VERSION = '1.0.0';
 # be installed.  The extra '.' in the middle of the path is to avoid
 # beginning with '//', which means a network share on Cygwin.
 #
-my $location = '$(DESTDIR)/./$(PREFIX)';
+my $location = '$(DESTDIR)$(PREFIX)';
 
 our %extra_constants;
 %extra_constants
